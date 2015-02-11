@@ -5,8 +5,8 @@
 # Home page
 GET     /                   controllers.Application.index
 
-->      /                   asset.Routes
+->      /asset              asset.Routes
 
-->      /                   application.Routes
+->      /application        application.Routes
 
 GET     /assets/*file       controllers.Assets.at(path="/public", file)
