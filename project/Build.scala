@@ -11,7 +11,7 @@ object Setting {
     javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint"),
     scalacOptions ++= Seq("-deprecation", "-feature", "-language:reflectiveCalls"),
     ScoverageSbtPlugin.ScoverageKeys.coverageExcludedPackages := "<empty>;Reverse.*;.*?javascript;controllers.debug.*?",
-    ScoverageSbtPlugin.ScoverageKeys.coverageExcludedFiles := "*routing.scala;"
+    ScoverageSbtPlugin.ScoverageKeys.coverageExcludedFiles := ".*?routing.scala;"
   )
 
   val asset = common ++ Seq(
